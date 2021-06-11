@@ -2,7 +2,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
+
         StudentDAOImpl dao = new StudentDAOImpl();
+
         String name = "Name ";
         for (int i = 0; i < 1000; i++) {
             dao.save(new Student(name + i, 1 + (int) (Math.random() * 5)));
